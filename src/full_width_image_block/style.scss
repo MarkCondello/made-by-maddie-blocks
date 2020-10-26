@@ -1,0 +1,28 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+.wp-block-made-full-width-image-block {
+    position: relative;
+    background-repeat: no-repeat;
+    display: block;
+
+    @include breakpoint(large up) {
+
+        &:before {
+            @include side-border(auto, $border-gap, $made-midnight);
+        }
+
+        &:after {
+            @include side-border($border-gap, auto, $made-midnight);
+        }
+    }
+
+    .full-width-image {
+        @include breakpoint(medium down) {
+            background-size: contain!important;
+        }
+    }
+}

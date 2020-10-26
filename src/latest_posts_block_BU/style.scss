@@ -1,0 +1,45 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+
+/*** Latest recipes **/
+.latest-recipes {
+  list-style: none;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .latest-recipes {
+      display: flex;
+      justify-content: space-between;
+  }
+  .latest-recipes li {
+      flex: 0 0 calc(33.3% - 1rem);
+  }
+}
+.latest-recipes .content {
+  padding: 10px 20px;
+}
+.latest-recipes h2 {
+  color: black;
+  font-size: 30px;
+  margin: 0;
+  line-height: 1.2;
+}
+.latest-recipes .meta span {
+  color: #3f9c1b;
+  font-weight: bold;
+}
+.latest-recipes .button {
+  background-color: #3f9c1b;
+  padding: 10px;
+  display: block;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+}

@@ -1,0 +1,55 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+ /*** image & Text Block **/
+
+.image-text-block {
+  padding: 100px 2rem;
+  background-color: dodgerblue;
+}
+.image-text-block .container{
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.image-text-block .content {
+  flex: 0 0 60%;
+  color: white;
+}
+.image-text-block h1 {
+  font-family: 'Staatliches', cursive;
+  font-weight: 400;
+  margin: 0;
+  font-size: 60px;
+}
+.image-text-block .content 
+.image-text-block .image {
+  flex: 0 1 calc(40% - 2rem);
+}
+.image-text-block .button {
+  background-color: white;
+  padding: 10px 30px;
+  font-size: 18px;
+  margin-top: 30px;
+  text-align: center;
+  color: dodgerblue;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+.is-style-green {
+  background-color: green;
+}
+
+.is-style-pink {
+  background-color: pink;
+}
+

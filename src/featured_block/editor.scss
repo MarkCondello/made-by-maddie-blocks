@@ -1,0 +1,65 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+.made-featured-block {
+  z-index: 1;
+    
+  &.background-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: center;
+    
+    > div {
+      flex: 1;
+
+      &.info {
+        text-align: center;
+        color: $white;
+        @include ff-serif();
+
+        p {
+          margin: 0;
+        }
+
+        .flex-container {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          * {
+            font-family: 'sans-serif';
+          }
+        }
+      }
+
+      img {
+        margin: auto;
+        display: block;
+        z-index: 0;
+        &.border {
+          border: 1px dashed $made-midnight;
+        }
+
+        &.show-for-large {
+          @include breakpoint(large down){
+              display: block!important;
+          }   
+        }
+      }
+
+    }
+  }
+
+  a {
+    @include disableLinks();
+  }
+}

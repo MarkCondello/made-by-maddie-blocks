@@ -1,0 +1,87 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+ 
+.wp-block-made-featured-block {
+  height: 540px;
+  position: relative;
+
+  @include breakpoint(large up) {
+    &:before {
+        @include side-border(auto, $border-gap);
+        height: calc(100% - #{$border-gap});
+        top: $border-gap;
+    }
+    &:after {
+        @include side-border( $border-gap, auto);
+        height: calc(100% - #{$border-gap});
+        top: $border-gap;
+    }
+  }
+ 
+  &.background-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    color: $white;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    padding: 2rem;
+
+    @include breakpoint(medium down){
+      padding: 1rem 0;
+    }
+    
+    > div {
+      flex: 1;
+      height: 100%;
+
+      &.info {
+        height: 100%;
+        text-align: center;
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: relative;
+        
+        h1 {
+          margin-bottom: 4rem;
+        }
+
+        .role-info,
+        .agency-info,
+        .year-info {
+          label {
+             color: $white;
+          }
+        }
+
+      }
+
+      &.primary-image,
+      &.secondary-image {
+        
+        img {
+          height: 100%;
+          transform-origin: center;
+          &.border {
+            border: 1px dashed $made-midnight;
+          }
+        }
+      }
+
+      //this may have to be a background on a div
+      img {
+        margin: auto;
+        display: block;
+      }
+    }
+  }
+}

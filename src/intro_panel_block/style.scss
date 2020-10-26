@@ -1,0 +1,52 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+ 
+.made-intro-block {
+
+  .-inner {
+    &.background-image {
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      padding: 200px 0;
+
+      @include breakpoint(medium down) {
+        background-position-x: 75%;
+      }
+    }
+    
+    position: relative;
+    color: $white;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+ 
+    h1, h2 {
+      margin: 0;
+    }
+  
+    .logo {
+      height: 300px;
+      width: 300px;
+      background-image: url('../img/made-logo.svg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: all 1s;
+
+      @include breakpoint(medium down) {
+        height: 350px;
+        width: 350px;
+      }
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+}

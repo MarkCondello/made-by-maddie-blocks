@@ -1,0 +1,17 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+.wp-block-made-block-my-block  {
+  background: $success-color;
+  border: 0.2rem solid $secondary-color;
+  color: $primary-color;
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 2rem;
+  background: linear-gradient(90deg, rgba(140,140,140,1) 2%, rgba(213,213,213,1) 100%);
+
+}

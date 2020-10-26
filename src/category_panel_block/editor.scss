@@ -1,0 +1,59 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+ 
+.made-category-panel-block {
+  min-height: 300px;
+  height: 100%;
+  width: 100%;
+  padding: 110px;
+  position: relative;
+
+  @include categoryContainer();
+  
+  .media-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    
+    > a {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      @include disableLinks();
+  
+      .img-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+  
+      .content-container {
+        //hide content for admin area
+        display: none;
+      }
+    }
+  }
+   
+  &:before {
+    @include side-border(auto, $border-gap, $made-midnight);
+    height: calc(100% - #{$border-gap + $border-gap});
+    top: $border-gap;
+    z-index: 1;
+  }
+
+  &:after {
+    @include side-border( $border-gap, auto, $made-midnight);
+    height: calc(100% - #{$border-gap + $border-gap});
+    top: $border-gap;
+    z-index: 1;
+
+  }
+}

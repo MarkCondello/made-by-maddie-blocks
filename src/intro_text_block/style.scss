@@ -1,0 +1,35 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+ /*** image & Text Block **/
+
+ .wp-block-made-intro-text-block {
+  position: relative;
+  padding-bottom: 60px;
+  
+  @include breakpoint(large up) {
+    padding-bottom: 120px;
+
+      &:before {
+          @include side-border(auto, $border-gap, $made-midnight);
+      }
+
+      &:after {
+          @include side-border($border-gap, auto, $made-midnight);
+      }
+  }
+
+  .leading-content {
+    font-style: italic;
+    font-weight: bold;
+    margin: 3.25rem 0;
+  }
+  .secondary-content {
+    margin: 0;
+  }
+}
+
+ 

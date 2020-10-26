@@ -1,0 +1,16 @@
+.full-width-image-block {
+    @include disableLinks();
+
+    &.hide-for-medium {
+        @include breakpoint(medium up){
+            display: block!important;
+        }   
+    }
+
+    &.show-for-medium {
+        @include breakpoint(large down){
+            display: block!important;
+        }   
+    }
+
+}

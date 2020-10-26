@@ -1,0 +1,15 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+ .two-col-image-block {
+    display: flex;
+    flex-direction: row;
+
+    .spotlight {
+        display: block;
+        width: 50%;
+    }
+ }
