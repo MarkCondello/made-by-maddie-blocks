@@ -47,10 +47,6 @@
           flex-direction: column;
           align-items: center;
           z-index: 1;
-
-          img {
-            height: 100%;
-          }
           
           @include breakpoint(medium down){
             padding: 2rem;
