@@ -15,6 +15,7 @@
 
       @include breakpoint(medium down) {
         background-position-x: 75%;
+        padding: 0;
       }
     }
     
@@ -38,10 +39,11 @@
       background-repeat: no-repeat;
       background-position: center;
       transition: all 1s;
+      margin-bottom: 1rem;
 
       @include breakpoint(medium down) {
-        height: 350px;
-        width: 350px;
+        height: 250px;
+        width: 250px;
       }
     }
   

@@ -37,7 +37,7 @@
         height: 100%;   
         @include breakpoint(medium down){
           height: 50%;
-          border: 1px solid red;
+         // border: 1px solid red;
         }  
     
         .img-container {
@@ -60,6 +60,9 @@
           bottom: -70px;
           transition: bottom .5s, opacity .5s  ease-in;
           z-index: 2;
+          @include breakpoint(medium down){
+            display: none;
+          }
         }
 
         &:hover {
