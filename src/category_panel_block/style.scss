@@ -51,6 +51,15 @@
           img {
             height: 100%;
           }
+          
+          @include breakpoint(medium down){
+            padding: 2rem;
+
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
         }
     
         .content-container {
