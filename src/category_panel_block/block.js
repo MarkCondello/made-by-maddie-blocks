@@ -10,15 +10,13 @@ import './editor.scss';
 import './style.scss';
 
 import icons from '../../src/icons';
-
- 
  
 const { __ } = wp.i18n; // Import __() from wp.i18n
 const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.blocks
 const { withSelect, } = wp.data;
 
 const { InspectorControls } = wp.editor;
-const {PanelBody, SelectControl,   RangeControl } = wp.components;
+const { SelectControl } = wp.components;
 
 /**
  * Register: aa Gutenberg Block.
@@ -37,7 +35,7 @@ registerBlockType( 'made/category-panel-block', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
 	title: 'Category Panel', // Block title.
 	//change icon
-	icon: icons.logo, // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
+	icon: icons.logo, 
 	category: 'made-theme', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
 		__( 'category-panel-block — Made Block' ),
@@ -181,9 +179,7 @@ registerBlockType( 'made/category-panel-block', {
 			primaryPermalink, 
 			primaryTitle,
 			primaryMediaURL, 
-			primaryMediaScale,
-			primaryMediaYPos,
-			primaryMediaXPos, 
+	 
 			primaryAgency,
 			primaryRole,
 			primaryYear,
@@ -191,9 +187,7 @@ registerBlockType( 'made/category-panel-block', {
 			secondaryPermalink, 
 			secondaryTitle,
 			secondaryMediaURL,
-			secondaryMediaScale,
-			secondaryMediaYPos,
-			secondaryMediaXPos,
+ 
 			secondaryAgency,
 			secondaryRole,
 			secondaryYear,
