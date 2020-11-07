@@ -45,7 +45,6 @@ registerBlockType( 'made/category-panel-block', {
 	attributes: {
 		categoryId :{
 			type: 'number',
-			default: 0,
 		},
 		categoryName :{
 			type: 'string',
@@ -70,22 +69,6 @@ registerBlockType( 'made/category-panel-block', {
 			selector: '.primary-image img',
 			attribute: 'src', 
 		},
-
-
-		
-		primaryMediaScale: {
-			type: 'number',
-			default: 1,
-		},
-		primaryMediaYPos: {
-			type: 'number',
-			default: 0,
-		},
-		primaryMediaXPos: {
-			type: 'number',
-			default: 0,
-		},
-
 
 		primaryAgency: {
 			type: 'string',
@@ -115,21 +98,6 @@ registerBlockType( 'made/category-panel-block', {
 			attribute: 'src', 
 		},
 
-
-		secondaryMediaScale: {
-			type: 'number',
-			default: 1,
-		},
-		secondaryMediaYPos: {
-			type: 'number',
-			default: 0,
-		},
-		secondaryMediaXPos: {
-			type: 'number',
-			default: 0,
-		},
-
-		
 		secondaryAgency: {
 			type: 'string',
 			default: 'No Agency'
@@ -217,19 +185,23 @@ registerBlockType( 'made/category-panel-block', {
 					return cat;
 				}
 			});
+
+			foo
 			setAttributes({categoryName : category[0].name});
-			setAttributes({categorySlug: category[0].slug});
+			setAttributes({categorySlug : category[0].slug});
 
 			let categoryPosts = props.posts.map( post => {
-
  				if(post.categories[0] == value){
 					console.log("Inside posts map, cat check", post.categories[0], "cat id selected", value, "Post ", post)
 					return post;
 				}
 			});
+
+			console.log("Cat posts: ", categoryPosts)
 			
 			if(categoryPosts[0]){
 				let firstPost = categoryPosts[0];
+				console.log('First Post', firstPost);
 
  				if(firstPost.link){
 					setAttributes({ primaryPermalink: firstPost.link});
@@ -253,6 +225,7 @@ registerBlockType( 'made/category-panel-block', {
 
 			if(categoryPosts[1]){
 				let secondPost = categoryPosts[1];
+				console.log('Second Post', secondPost);
 
 				if(secondPost.link){
 					setAttributes({ secondaryPermalink: secondPost.link});
@@ -275,30 +248,6 @@ registerBlockType( 'made/category-panel-block', {
 			}
 		}
 		  
-		let onPrimaryMediaScaleChange = value => {
-			setAttributes({primaryMediaScale : value});
-		}
- 
-		let onPrimaryMediaYPosChange = value => {
-			setAttributes({ primaryMediaYPos : value});
-		}
-		  
-		let onPrimaryMediaXPosChange = value => {
-			setAttributes({ primaryMediaXPos : value});
-		}
-
-		let onSecondaryMediaScaleChange = value => {
-			setAttributes({ secondaryMediaScale : value});
-		}
- 
-		let onSecondaryMediaYPosChange = value => {
-			setAttributes({ secondaryMediaYPos : value});
-		}
-		  
-		let onSecondaryMediaXPosChange = value => {
-			setAttributes({ secondaryMediaXPos : value});
-		}
-		
 		return (
  			<div className="made-category-panel-block section">
 				<div class="category-container">
@@ -373,58 +322,7 @@ registerBlockType( 'made/category-panel-block', {
 						value={categoryId}
 					>
 					</SelectControl>
-					{/* <PanelBody title={ 'Primary Image' }>
-						<RangeControl
-							label="Scale"
-							value={ primaryMediaScale }
-							onChange={onPrimaryMediaScaleChange}
-							step={ .5 }
-							min={ 1 }
-							max={ 5 }
-						/>  
-						<RangeControl
-							label="Y position"
-							value={ primaryMediaYPos }
-							onChange={onPrimaryMediaYPosChange}
-							step={ .5 }
-							min={ -100 }
-							max={ 100 }
-						/>   
-						<RangeControl
-							label="X position"
-							value={ primaryMediaXPos }
-							onChange={onPrimaryMediaXPosChange}
-							step={ .5 }
-							min={ -100 }
-							max={ 100 }
-						/>   	
-					</PanelBody>
-					<PanelBody title={ 'Secondary Image' }>
-						<RangeControl
-							label="Scale"
-							value={ secondaryMediaScale }
-							onChange={ onSecondaryMediaScaleChange }
-							step={ .5 }
-							min={ 1 }
-							max={ 5 }
-						/>  
-						<RangeControl
-							label="Y position"
-							value={ secondaryMediaYPos }
-							onChange={ onSecondaryMediaYPosChange }
-							step={ .5 }
-							min={ -100 }
-							max={ 100 }
-						/>   
-						<RangeControl
-							label="X position"
-							value={ secondaryMediaXPos }
-							onChange={ onSecondaryMediaXPosChange }
-							step={ .5 }
-							min={ -100 }
-							max={ 100 }
-					/>  
-					</PanelBody> */} 
+					
 				</InspectorControls>
 			</div>
 		 )
@@ -448,9 +346,7 @@ registerBlockType( 'made/category-panel-block', {
 			primaryPermalink,
 			primaryTitle,
 			primaryMediaURL, 
-			primaryMediaScale,
-			primaryMediaYPos,
-			primaryMediaXPos, 
+	 
 			primaryAgency,
 			primaryRole,
 			primaryYear,
@@ -458,9 +354,7 @@ registerBlockType( 'made/category-panel-block', {
 			secondaryPermalink,
 			secondaryTitle,
 			secondaryMediaURL,
-			secondaryMediaScale,
-			secondaryMediaYPos,
-			secondaryMediaXPos,
+	
 			secondaryAgency,
 			secondaryRole,
 			secondaryYear,
