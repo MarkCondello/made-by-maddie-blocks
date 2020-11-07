@@ -35,7 +35,7 @@ registerBlockType( 'made/category-panel-block', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
 	title: 'Category Panel', // Block title.
 	//change icon
-	icon: icons.logo, 
+	icon: icons.categoryPanel, 
 	category: 'made-theme', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
 		__( 'category-panel-block — Made Block' ),
