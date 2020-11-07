@@ -90666,7 +90666,6 @@ h3 {
         .wp-block-made-featured-block.background-image > div.info .year-info label {
           color: #ffffff; }
       .wp-block-made-featured-block.background-image > div.primary-image img, .wp-block-made-featured-block.background-image > div.secondary-image img {
-        height: 100%;
         -webkit-transform-origin: center;
             -ms-transform-origin: center;
                 transform-origin: center; }
