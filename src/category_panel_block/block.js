@@ -186,22 +186,18 @@ registerBlockType( 'made/category-panel-block', {
 				}
 			});
 
-			foo
-			setAttributes({categoryName : category[0].name});
+ 			setAttributes({categoryName : category[0].name});
 			setAttributes({categorySlug : category[0].slug});
 
-			let categoryPosts = props.posts.map( post => {
- 				if(post.categories[0] == value){
-					console.log("Inside posts map, cat check", post.categories[0], "cat id selected", value, "Post ", post)
-					return post;
-				}
-			});
+			let categoryPosts = props.posts.filter( post =>  { 
+				//console.log("Inside posts map, cat check", post.categories[0], "cat id selected is", value, "Post: ", post)
+				return Number(post.categories[0]) === Number(value);
+			 }
+			);
 
 			console.log("Cat posts: ", categoryPosts)
-			
 			if(categoryPosts[0]){
 				let firstPost = categoryPosts[0];
-				console.log('First Post', firstPost);
 
  				if(firstPost.link){
 					setAttributes({ primaryPermalink: firstPost.link});
@@ -225,7 +221,6 @@ registerBlockType( 'made/category-panel-block', {
 
 			if(categoryPosts[1]){
 				let secondPost = categoryPosts[1];
-				console.log('Second Post', secondPost);
 
 				if(secondPost.link){
 					setAttributes({ secondaryPermalink: secondPost.link});
