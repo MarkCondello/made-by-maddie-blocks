@@ -88,12 +88,6 @@ function made_block_assets() { // phpcs:ignore
 		'made/featured-block',
 		'made/intro-text-block',
 		'made/full-width-image-block',
-
-
-		//'made/two-col-images-block'
- 		// 'made/testimonial-block',
-		// 'made/hero-block',
-		// 'made/image-text-block'
 	);
 
 	//register their stylesheets
@@ -111,13 +105,13 @@ function made_block_assets() { // phpcs:ignore
 	}
 
 	//Enqueue dynamic Latest Posts block
-	register_block_type('made/latest-posts', array(
-		'editor_script' => 'made-block-js',
-		'editor_style'  => 'made-block-editor-css',	
-		'style'  => 'made-style-css',
-		'render_callback' => 'latest_posts_block'
+	// register_block_type('made/latest-posts', array(
+	// 	'editor_script' => 'made-block-js',
+	// 	'editor_style'  => 'made-block-editor-css',	
+	// 	'style'  => 'made-style-css',
+	// 	'render_callback' => 'latest_posts_block'
 
-	));
+	// ));
 }
 
 //Callback for the Latest posts block
@@ -166,7 +160,7 @@ function made_new_gutenberg_category( $categories, $post){
 		array(
 			array(
 				'slug' => 'made-theme',
-				'title' => 'Made Theme',
+				'title' => 'Made by Maddie Blocks',
  			),
 		)
 	);

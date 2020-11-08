@@ -9,7 +9,7 @@
 import './editor.scss';
 import './style.scss';
 
-import icons from '../../src/icons';
+ import icons from '../../src/icons';
  
 const { __ } = wp.i18n; // Import __() from wp.i18n
 const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.blocks
@@ -34,8 +34,7 @@ const { SelectControl } = wp.components;
 registerBlockType( 'made/category-panel-block', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
 	title: 'Category Panel', // Block title.
-	//change icon
-	icon: icons.categoryPanel, 
+	icon: icons.categoryPanel,
 	category: 'made-theme', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
 		__( 'category-panel-block — Made Block' ),

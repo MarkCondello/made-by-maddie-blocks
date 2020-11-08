@@ -9,9 +9,6 @@
 import './editor.scss';
 import './style.scss';
 
-import axios from 'axios';
-
-
 const { __ } = wp.i18n; // Import __() from wp.i18n
 const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.blocks
 const { withSelect, } = wp.data;
@@ -158,7 +155,6 @@ registerBlockType( 'made/featured-block', {
 	 */
 	edit: withSelect( (select) => {
 		const { getCurrentPostId, getEditedPostAttribute } = select("core/editor");
- 
  			return {
 				//GET REQUEST TO REST API
   				postId: getCurrentPostId(),
