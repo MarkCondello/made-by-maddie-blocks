@@ -9,6 +9,8 @@
 import './editor.scss';
 import './style.scss';
 
+import icons from '../../src/icons';
+
 const { __ } = wp.i18n; // Import __() from wp.i18n
 const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.blocks
  
@@ -32,7 +34,7 @@ registerBlockType( 'made/two-col-block', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
 	title: 'Two Column Panel', // Block title.
 	//change icon
-	icon: 'format-image', // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
+	icon: icons.twoColPanelBlock,  
 	category: 'made-theme', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
  	keywords: [
 		__( 'about-block — Made Block' ),

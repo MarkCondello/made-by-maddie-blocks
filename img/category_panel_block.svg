@@ -1,16 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
-<style type="text/css">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xml:space="preserve"
+   style="enable-background:new 0 0 100 100;"
+   viewBox="0 0 100 100"
+   y="0px"
+   x="0px"
+   id="Layer_1"
+   version="1.1"><metadata
+     id="metadata333"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs331" /><style
+     id="style312"
+     type="text/css">
 	.st0{fill:none;stroke:#0D1137;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-</style>
-<g>
-	<rect x="32.71" y="34.74" class="st0" width="7.74" height="7.74"/>
-	<rect x="32.71" y="46.35" class="st0" width="7.74" height="7.74"/>
-	<rect x="32.71" y="57.96" class="st0" width="7.74" height="7.74"/>
-	<line class="st0" x1="48.19" y1="38.61" x2="67.54" y2="38.61"/>
-	<line class="st0" x1="48.19" y1="50.22" x2="67.54" y2="50.22"/>
-	<line class="st0" x1="48.19" y1="61.83" x2="67.54" y2="61.83"/>
-</g>
-</svg>
+</style><g
+     transform="matrix(2.7060177,0,0,2.379528,-85.402478,-70.622893)"
+     id="g326"><path
+       d="M 48.189999,61.830002 H 67.540001 M 48.189999,50.220001 h 19.350002 m -19.350002,-11.61 H 67.540001 M 32.709999,57.959999 h 7.74 v 7.74 h -7.74 z m 0,-11.610001 h 7.74 v 7.74 h -7.74 z m 0,-11.609996 h 7.74 v 7.739999 h -7.74 z"
+       style="fill:none;stroke:#0d1137;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       id="line324" /></g></svg>

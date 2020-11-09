@@ -9,7 +9,7 @@
 import './editor.scss';
 import './style.scss';
 
- import icons from '../../src/icons';
+import icons from '../../src/icons';
  
 const { __ } = wp.i18n; // Import __() from wp.i18n
 const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.blocks

@@ -1,16 +1,13 @@
-//  Import CSS.
-//import './editor.scss';
 import './style.scss';
 
 const { registerBlockType } = wp.blocks;
 const { RichText,  BlockControls, AlignmentToolbar } = wp.editor;
  
-//import logo https://mor10.com/a-simpler-way-to-add-svgs-to-custom-wordpress-gutenberg-blocks-using-svgr/
-//import {Logo} from '../made-logo.svg'; //Not sure about this
+import icons from '../../src/icons';
 
 registerBlockType('made/intro-text-block', {
     title: 'Intro Text',
-    icon: 'id-alt' ,
+    icon: icons.introText,
     category: 'made-theme',
     attributes: {
         leadingContent: {

@@ -9,6 +9,8 @@
 import './editor.scss';
 import './style.scss';
 
+import icons from '../../src/icons';
+
 const { __ } = wp.i18n; // Import __() from wp.i18n
 const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.blocks
 const { withSelect, } = wp.data;
@@ -32,7 +34,7 @@ const {PanelBody, CheckboxControl, Button, RangeControl } = wp.components;
 registerBlockType( 'made/featured-block', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
 	title: 'Featured', // Block title.
-	icon: 'format-image', // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
+	icon: icons.featuredBlock,
 	category: 'made-theme', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
 		__( 'featured-block — Made Block' ),

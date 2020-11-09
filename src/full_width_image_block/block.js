@@ -1,17 +1,15 @@
 //  Import CSS.
 import './editor.scss';
 import './style.scss';
+import icons from '../../src/icons';
 
 const { registerBlockType } = wp.blocks;
 const { MediaUpload, InspectorControls} = wp.editor;
 const { IconButton, CheckboxControl, PanelBody} = wp.components;
 
-//import logo https://mor10.com/a-simpler-way-to-add-svgs-to-custom-wordpress-gutenberg-blocks-using-svgr/
-//import {Logo} from '../made-logo.svg'; //Not sure about this
-
 registerBlockType('made/full-width-image-block', {
     title: 'Full Width Image',
-    icon: 'table-row-before' ,
+    icon: icons.fullWidthImageBlock,
     category: 'made-theme',
     attributes: {
         backgroundImage: {
