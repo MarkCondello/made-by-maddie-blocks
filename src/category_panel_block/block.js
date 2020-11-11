@@ -254,6 +254,9 @@ registerBlockType( 'made/category-panel-block', {
 				<div class="media-container"> 
 					{primaryMediaURL && (
 					<a className="primary-image" href={primaryPermalink}>
+						<div className="title-container"> 
+							<h3>{primaryTitle}</h3>
+						</div>
 						<div className="img-container">
 							<img src={primaryMediaURL} />
 						</div>
@@ -277,6 +280,9 @@ registerBlockType( 'made/category-panel-block', {
 					)}
 					{secondaryMediaURL && (
 					<a className="secondary-image" href={secondaryPermalink}> 
+						<div className="title-container"> 
+							<h3>{secondaryTitle}</h3>
+						</div>
 						<div className="img-container"> 
 							<img src={secondaryMediaURL} />
 						</div>
@@ -367,6 +373,9 @@ registerBlockType( 'made/category-panel-block', {
 				<div class="media-container"> 
 					{primaryMediaURL && (
 					<a className="primary-image" href={primaryPermalink}> 
+						<div className="title-container"> 
+							<h3>{primaryTitle}</h3>
+						</div>
 						<div className="img-container">
 							<img src={primaryMediaURL} />
 						</div>
@@ -386,10 +395,12 @@ registerBlockType( 'made/category-panel-block', {
 								</div>
 							</div>	
 						</div>
-					</a>
-					)}
+					</a>)}
 					{secondaryMediaURL && (
 					<a className="secondary-image" href={secondaryPermalink}> 
+						<div className="title-container"> 
+							<h3>{secondaryTitle}</h3>
+						</div>
 						<div className="img-container">
 							<img src={secondaryMediaURL} />
 						</div>
@@ -409,8 +420,7 @@ registerBlockType( 'made/category-panel-block', {
 								</div>
 							</div>
 						</div>
-					</a>
-				)}
+					</a>)}
 				</div>
 				<div class="line-container-bottom">
 					<div class="-inner"> 

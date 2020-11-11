@@ -15006,11 +15006,13 @@ h3 {
   .agency-info p,
   .year-info p {
     margin: 0;
-    line-height: 1.3; }
+    line-height: 1.3;
+    font-weight: 300; }
   .role-info label,
   .agency-info label,
   .year-info label {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-weight: 700; }
 
 .bold {
   font-weight: 700; }
@@ -30040,11 +30042,13 @@ h3 {
   .agency-info p,
   .year-info p {
     margin: 0;
-    line-height: 1.3; }
+    line-height: 1.3;
+    font-weight: 300; }
   .role-info label,
   .agency-info label,
   .year-info label {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-weight: 700; }
 
 .bold {
   font-weight: 700; }
@@ -45077,11 +45081,13 @@ h3 {
   .agency-info p,
   .year-info p {
     margin: 0;
-    line-height: 1.3; }
+    line-height: 1.3;
+    font-weight: 300; }
   .role-info label,
   .agency-info label,
   .year-info label {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-weight: 700; }
 
 .bold {
   font-weight: 700; }
@@ -60217,11 +60223,13 @@ h3 {
   .agency-info p,
   .year-info p {
     margin: 0;
-    line-height: 1.3; }
+    line-height: 1.3;
+    font-weight: 300; }
   .role-info label,
   .agency-info label,
   .year-info label {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-weight: 700; }
 
 .bold {
   font-weight: 700; }
@@ -75360,11 +75368,13 @@ h3 {
   .agency-info p,
   .year-info p {
     margin: 0;
-    line-height: 1.3; }
+    line-height: 1.3;
+    font-weight: 300; }
   .role-info label,
   .agency-info label,
   .year-info label {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-weight: 700; }
 
 .bold {
   font-weight: 700; }

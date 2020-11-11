@@ -35,6 +35,7 @@
         position: relative;
         overflow: hidden;
         height: 100%;   
+
         @include breakpoint(medium down){
           height: 50%;
          // border: 1px solid red;
@@ -47,17 +48,46 @@
           flex-direction: column;
           align-items: center;
           z-index: 1;
-          
+          opacity: 1;
+          transition: all 1s ease-in-out;
+
           @include breakpoint(medium down){
             padding: 2rem;
 
             img {
               width: 100%;
               height: auto;
+ 
             }
           }
         }
+
+        &.lose-focus {
+          .img-container {
+            opacity: .6;
+          }
+        }
     
+
+        .title-container {
+          position: absolute;
+          width: 100%;
+          opacity: 0;
+          top: -70px;
+          transition: top .5s, opacity .5s ease-in;
+          z-index: 2;
+
+          h3 {
+            text-align: center;
+            @include ff-serif();
+            font-size: 30px;
+          }
+    
+          @include breakpoint(medium down){
+            display: none;
+          }
+        }
+
         .content-container {
           position: absolute;
           width: 100%;
@@ -71,6 +101,16 @@
         }
 
         &:hover {
+          .img-container {
+            transform: scale(1.05);
+          }
+
+          .title-container {
+            top: 130px;
+            opacity: 1;
+            transition: top .5s, opacity .5s ease-out;
+          }
+
           .content-container {
             bottom: 120px;
             opacity: 1;
@@ -136,8 +176,8 @@
           }
   
           p {
-              margin: -1em;
-              padding: 0 1rem;
+              margin: -1rem .5em;
+              padding: 1rem 0;
               @include breakpoint(medium down){
                 margin: 0;
                 
