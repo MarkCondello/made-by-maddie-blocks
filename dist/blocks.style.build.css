@@ -45206,9 +45206,13 @@ h3 {
       top: 0;
       width: 1px;
       z-index: 2; } }
-  @media print, screen and (max-width: 63.99875em) {
-    .wp-block-made-full-width-image-block .full-width-image {
-      background-size: contain !important; } }
+  .wp-block-made-full-width-image-block .full-width-image {
+    width: 100%; }
+    .wp-block-made-full-width-image-block .full-width-image.side-padding {
+      padding: 0 105px; }
+      @media print, screen and (max-width: 63.99875em) {
+        .wp-block-made-full-width-image-block .full-width-image.side-padding {
+          padding: 0; } }
 @charset "UTF-8";
 /**
  * #.# Common SCSS

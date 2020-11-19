@@ -67,15 +67,10 @@ registerBlockType('made/full-width-image-block', {
         }
 
         return (
-            <a 
-            className={`full-width-image-block spotlight ${showDesktopOnly ? 'show-for-medium' : ''} ${showMobileOnly ? 'hide-for-medium' : ''}`} 
+            <a className={`full-width-image-block spotlight ${showDesktopOnly ? 'show-for-medium' : ''} ${showMobileOnly ? 'hide-for-medium' : ''}`} 
             href={backgroundImage} 
             data-title={backgroundTitle} > 
-                <div 
-                className="full-width-image"
-                data-mobile-height={`${backgroundHeight / 2}px` }
-                style={{ backgroundImage: `url( ${backgroundImage} )`, width: '100%', backgroundPosition: 'center', minHeight: `${backgroundHeight}px`, backgroundRepeat: 'no-repeat', backgroundSize: fullWidth ? 'cover' :  'calc(100% - 200px)' }}>
-                </div> 
+                <img src={backgroundImage} className={`full-width-image ${fullWidth ? '' : 'side-padding'}`} />
                 <InspectorControls> 
                         <PanelBody title={ 'Background Image' }>
                         <MediaUpload
@@ -120,14 +115,9 @@ registerBlockType('made/full-width-image-block', {
         return (
             <a 
             className={`full-width-image-block spotlight ${showDesktopOnly ? 'show-for-medium' : ''} ${showMobileOnly ? 'show-for-small-only' : '' }`} 
-
             href={backgroundImage} 
             data-title={backgroundTitle}> 
-                <div 
-                className="full-width-image"
-                data-mobile-height={`${backgroundHeight / 2}px` }
-                style={{ backgroundImage: `url( ${backgroundImage} )`, width: '100%', backgroundPosition: 'center', minHeight: `${backgroundHeight}px`, backgroundRepeat: 'no-repeat', backgroundSize: fullWidth ? 'cover' :  'calc(100% - 200px)'}}>
-                </div> 
+                <img src={backgroundImage} className={`full-width-image ${fullWidth ? '' : 'side-padding'}`} />
             </a>
         );
     }

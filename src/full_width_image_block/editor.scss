@@ -13,4 +13,16 @@
         }   
     }
 
+    .full-width-image {       
+        width: 100%;
+
+        &.side-padding {
+            padding: 0 $border-gap;
+
+            @include breakpoint(medium down) {
+                padding: 0;
+            }
+        } 
+    }
+
 }
