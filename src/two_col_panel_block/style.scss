@@ -65,6 +65,11 @@
           &:last-child {
            padding: 50px 0 0 15px;
          }
+
+          a {
+            color: $white; 
+            text-decoration: underline;
+          }
         }
 
         @include breakpoint(large down){
@@ -120,24 +125,34 @@
     }
 
     .line-container-bottom {
+     // border: 2px solid red;
+
       @include breakpoint(large down){
         padding: 0;
         height: 65px;
       }
 
-      .line {
-        background-color: $white;
-      }
+      @extend .category-container;
+      top: auto;
+      bottom: 0;
+  
+      .-inner {
+          align-items: flex-start;
 
-      .logo {
-        display: block;
-        height: 80px;
-        width: 80px;
-        margin: -40px 20px 0;
-        background-image: url('../img/made-logo.svg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+        .line {
+          background-color: $white;
+        }
+
+        .logo {
+          display: block;
+          height: 80px;
+          width: 80px;
+          margin: -40px 20px 0;
+          background-image: url('../img/made-logo.svg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
       }
 
       @include breakpoint (small down){
