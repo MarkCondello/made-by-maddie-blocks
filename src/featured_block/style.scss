@@ -56,7 +56,7 @@
         position: relative;
 
         @include breakpoint(medium down){
-          padding-bottom: 50px;
+          justify-content: center;
         }
         
         h1 {

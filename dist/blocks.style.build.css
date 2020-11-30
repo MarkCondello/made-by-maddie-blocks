@@ -90769,7 +90769,8 @@ h3 {
         position: relative; }
         @media print, screen and (max-width: 63.99875em) {
           .wp-block-made-featured-block.background-image > div.info {
-            padding-bottom: 50px; } }
+            -ms-flex-pack: center;
+                justify-content: center; } }
         .wp-block-made-featured-block.background-image > div.info h1 {
           margin-bottom: 4rem; }
         .wp-block-made-featured-block.background-image > div.info .role-info label,
