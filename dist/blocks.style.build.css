@@ -60262,7 +60262,7 @@ h3 {
     z-index: 2; }
     @media print, screen and (max-width: 63.99875em) {
       .made-category-panel-block .category-container {
-        height: 55px;
+        height: 75px;
         padding: 0; } }
     .made-category-panel-block .category-container .-inner {
       display: -ms-flexbox;
@@ -60426,10 +60426,6 @@ h3 {
     padding: 0 105px;
     z-index: 2;
     bottom: 0; }
-    @media print, screen and (max-width: 63.99875em) {
-      .made-category-panel-block .line-container-bottom {
-        height: 20px;
-        padding: 0; } }
     .made-category-panel-block .line-container-bottom .-inner {
       -ms-flex-align: start;
           align-items: flex-start;
@@ -60458,11 +60454,15 @@ h3 {
       .made-category-panel-block .line-container-bottom .-inner p {
         margin: -1rem .5em;
         padding: 1rem 0; }
-        @media print, screen and (max-width: 63.99875em) {
-          .made-category-panel-block .line-container-bottom .-inner p {
-            margin: 0; } }
         .made-category-panel-block .line-container-bottom .-inner p span {
           font-size: 1.25rem; }
+    @media print, screen and (max-width: 63.99875em) {
+      .made-category-panel-block .line-container-bottom {
+        height: 40px;
+        padding: 0; }
+        .made-category-panel-block .line-container-bottom .-inner p {
+          padding: 0;
+          line-height: 1; } }
 @charset "UTF-8";
 /**
  * #.# Common SCSS
@@ -75539,7 +75539,7 @@ h3 {
     z-index: 2; }
     @media print, screen and (max-width: 63.99875em) {
       .two-col-block .block-inner .category-container, .two-col-block .block-inner .line-container-bottom {
-        height: 55px;
+        height: 75px;
         padding: 0; } }
     .two-col-block .block-inner .category-container .-inner, .two-col-block .block-inner .line-container-bottom .-inner {
       display: -ms-flexbox;

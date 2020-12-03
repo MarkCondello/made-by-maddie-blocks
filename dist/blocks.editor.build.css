@@ -45132,7 +45132,7 @@ h3 {
     z-index: 2; }
     @media print, screen and (max-width: 63.99875em) {
       .made-category-panel-block .category-container {
-        height: 55px;
+        height: 75px;
         padding: 0; } }
     .made-category-panel-block .category-container .-inner {
       display: -ms-flexbox;
@@ -60287,7 +60287,7 @@ h3 {
     z-index: 2; }
     @media print, screen and (max-width: 63.99875em) {
       .two-col-block .block-inner .category-container {
-        height: 55px;
+        height: 75px;
         padding: 0; } }
     .two-col-block .block-inner .category-container .-inner {
       display: -ms-flexbox;
