@@ -26,6 +26,13 @@
       @include breakpoint(medium down) {
         flex-direction: column;
         height: 80vh;
+
+        //target landscape mobile orientationa
+        @media(max-height: 450px){
+          flex-direction: row;
+          height: 100vh;
+          align-items: center;        
+        }
       }
 
       > a {
@@ -38,7 +45,6 @@
 
         @include breakpoint(medium down){
           height: 50%;
-         // border: 1px solid red;
         }  
     
         .img-container {

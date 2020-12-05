@@ -6,6 +6,10 @@
  
 .made-intro-block {
 
+  .fp-tableCell{
+    display: block;
+  }
+  
   .-inner {
     &.background-image {
       background-repeat: no-repeat;

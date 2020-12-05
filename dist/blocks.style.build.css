@@ -15033,6 +15033,9 @@ h3 {
  *
  * CSS for both Frontend+Backend.
  */
+.made-intro-block .fp-tableCell {
+  display: block; }
+
 .made-intro-block .-inner {
   position: relative;
   color: #ffffff;
@@ -60313,6 +60316,13 @@ h3 {
         -ms-flex-direction: column;
             flex-direction: column;
         height: 80vh; } }
+  @media print and (max-height: 450px), screen and (max-width: 63.99875em) and (max-height: 450px) {
+    .made-category-panel-block .media-container {
+      -ms-flex-direction: row;
+          flex-direction: row;
+      height: 100vh;
+      -ms-flex-align: center;
+          align-items: center; } }
     .made-category-panel-block .media-container > a {
       -ms-flex: 1;
           flex: 1;
@@ -75504,6 +75514,9 @@ h3 {
  * CSS for just Backend enqueued after style.scss
  * which makes it higher in priority.
  */
+.two-col-block .fp-tableCell {
+  display: block; }
+
 .two-col-block .block-inner {
   display: -ms-flexbox;
   display: flex;
